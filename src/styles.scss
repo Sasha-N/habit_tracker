@@ -12,7 +12,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     line-height: 1.6;
     background: #fff;
@@ -90,3 +90,6 @@ table th {
     text-align: center;
 }
 
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
