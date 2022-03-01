@@ -1,6 +1,6 @@
 <section>
     <header>
-        Трекер привычек: <strong>{{ dateService.date | async | moment:'DD.MM.YYYY'}}</strong>
+        Выбранная дата: <span>{{ dateService.date | async | moment:'DD.MM.YYYY'}}</span>
     <hr/>        
     </header>
 
@@ -11,9 +11,12 @@
                     <strong>
                         1
                     </strong>
-                    Цель
+                    Что я делал сегодня
                 </span>
-                <button class="btn btn-primary">Удалить</button>
+                <div>
+                <i class="material-icons">edit</i>
+                <i class="material-icons">delete</i>
+                </div>
             </li>
 
         </ul>
@@ -23,7 +26,7 @@
             <input type="text" formControlName="title">
             <button type="submit"
             class="btn btn-primary btn-block"
-            [disabled]="form.invalid">Add</button>
+            [disabled]="form.invalid">Добавить</button>
         </form>
     </footer>
 </section>

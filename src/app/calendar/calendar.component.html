@@ -2,9 +2,6 @@
     <thead>
         <tr>
             <th>
-                Вск
-            </th>
-            <th>
                 Пн
             </th>
             <th>
@@ -21,6 +18,9 @@
             </th>
             <th>
                 Сб
+            </th>            
+            <th>
+                Вск
             </th>
         </tr>
     </thead>
@@ -32,7 +32,7 @@
                 <span
                 [class.selected]="day.selected"
                 [class.active]="day.active">
-                    {{ day.value | moment:'ddd DD'}}
+                    {{ day.value | moment:'DD'}}
                 </span>
             </td>
         </tr>
