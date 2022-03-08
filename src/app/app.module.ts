@@ -8,6 +8,7 @@ import { OrganizerComponent } from './organizer/organizer.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MomentPipe } from './shared/moment.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CalendarComponent,
     SelectorComponent,
     OrganizerComponent,
-    MomentPipe
+    MomentPipe,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
